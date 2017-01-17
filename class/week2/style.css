@@ -1,0 +1,31 @@
+.header, .footer {
+    height: 75px;
+    min-height: 75px;
+    max-height: 75px;
+}
+
+/*Blog Page Specific Style*/
+.col-md-3 {
+    height: 500px;
+    min-height: 500px;
+    max-height: 500px;
+}
+
+.col-md-9 {
+    height: 500px;
+    min-height: 500px;
+    max-height: 500px;
+}
+
+/*Portfolio Page Specific Style*/
+.content {
+  height: 250px;
+  min-height: 250px;
+  max-height: 250px;
+}
+
+.tile {
+    height: 75px;
+    min-height: 75px;
+    max-height: 75px;
+}
