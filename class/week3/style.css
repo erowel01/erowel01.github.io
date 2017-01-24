@@ -1,0 +1,56 @@
+body {
+  color: white;
+  font-size: 24px;
+  text-align: center;
+}
+
+/*Webpage Page*/
+.header, .footer {
+  height: 75px;
+  max-height: 75px;
+  min-height: 75px;
+}
+
+.sidebar, .content {
+  height: 800px;
+  max-height: 800px;
+  min-height: 800px;
+}
+
+/*Portfolio Page*/
+.middleHeight {
+  height: 500px;
+  max-height: 500px;
+  min-height: 500px;
+}
+
+.tile {
+  height: 100px;
+  max-height: 100px;
+  min-height: 100px;
+}
+
+/*Nesting Columns Page*/
+.leftCell {
+  height: 250px;
+  max-height: 250px;
+  min-height: 250px;
+}
+
+.centerCell {
+  height: 250px;
+  max-height: 250px;
+  min-height: 250px;
+}
+
+.centerLeftCell, .centerRightCell {
+  height: 125px;
+  max-height: 125px;
+  min-height: 125px;
+}
+
+.rightCell {
+  height: 250px;
+  max-height: 250px;
+  min-height: 250px;
+}
