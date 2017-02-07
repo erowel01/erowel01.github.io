@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Week 5</title>
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+
+    <style>
+      .topRow {
+        height: 75px;
+        min-height: 75px;
+        max-height: 75px;
+        border: 1px solid black;
+      }
+      .middleRow {
+        height: 450px;
+        min-height: 450px;
+        max-height: 450px;
+        border: 1px solid black;
+      }
+      .bottomRow {
+        height: 150px;
+        min-height: 150px;
+        max-height: 150px;
+        border: 1px solid black;
+      }
+      h1 {
+        text-align: center;
+      }
+      .paddingAndMargins p {
+        padding-top: 4%;
+        margin-left: 22%;
+      }
+      .iconContainer {
+        position: relative;
+      }
+      .iconic {
+        width: 50px;
+        height: 50px;
+
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate( -50% , -50% );
+      }
+      .flexPracticeHorizontal {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      .flexPracticeVertical {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-flow: column;
+      }
+      p {
+        padding: 0;
+        margin: 0;
+      }
+    </style>
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.2/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-3 topRow">
+            <h1>Positioning</h1>
+        </div>
+        <div class="col-md-7 topRow paddingAndMargins">
+            <p class="">
+              Every different box is centered using a different method!
+            </p>
+        </div>
+        <div class="col-md-1 topRow iconContainer">
+            <img src="images/home-icon.png" alt="Home Icon" class="iconic">
+        </div>
+        <div class="col-md-1 topRow iconContainer">
+            <img src="images/Rss-icon.png" alt="Home Icon" class="iconic">
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-12 middleRow flexPracticeHorizontal flexPracticeVertical">
+            <p>
+              Isn't it amazing how cenetered everything is?
+            </p>
+            <img src="images/swampHand.gif" alt="Animated Swamp Hand">
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-3 bottomRow">
+            <img src="images/vaporWave1.jpg" alt="Vapor Wave 1">
+        </div>
+        <div class="col-md-3 bottomRow">
+            <img src="images/vaporWave2.png" alt="Vapor Wave 2">
+        </div>
+        <div class="col-md-3 bottomRow">
+            <img src="images/vaporWave3.png" alt="Vapor Wave 3">
+        </div>
+        <div class="col-md-3 bottomRow">
+            <img src="images/vaporWave4.jpg" alt="Vapor Wave 4">
+        </div>
+      </div>
+    </div>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+  </body>
+</html>
