@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Week 6 Class</title>
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <style>
+      .topRowLeft {
+        height: 50px;
+        min-height: 50px;
+        max-height: 50px;
+        border: 1px solid black;
+      }
+      .topRowRight {
+        height: 25px;
+        min-height: 25px;
+        max-height: 25px;
+        border: 1px solid black;
+      }
+      .topTextRow {
+        height: 100px;
+        min-height: 100px;
+        max-height: 100px;
+        border: 1px solid black;
+      }
+      .topTextRow h2 {
+        padding: 0;
+        margin: 0;
+        line-height: 100px;
+        text-align: center;
+      }
+      .bottomTextRow {
+        height: 90px;
+        min-height: 90px;
+        max-height: 90px;
+        border: 1px solid black;
+      }
+      .bottomTextRow img {
+        height: 75px;
+        display: block;
+        margin: 0 auto;
+        margin-top: 1%;
+      }
+      .gallery {
+        height: 120px;
+        min-height: 120px;
+        max-height: 120px;
+        border: 1px solid black;
+      }
+      #pic1 {
+        padding-top: 5%;
+        padding-left: 40%;
+      }
+      #pic2 {
+        padding-top: 5%;
+        padding-left: 18%;
+        padding-right: 10%;
+      }
+      #pic3 {
+        padding-top: 5%;
+        padding-left: 10%;
+      }
+      .galleryOneRight img {
+        margin-left: 40%;
+      }
+      .galleryOneRight p {
+        text-align: center;
+        line-height: 1;
+      }
+      .relativeParent {
+        position: relative;
+      }
+      .relativeParent img {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50% , -50%);
+      }
+      .relativeParentTwo {
+        position: relative;
+      }
+      .relativeParentTwo img {
+        height: 100px;
+        position: absolute;
+        top: 50%;
+        transform: translate(-50% , -50%);
+      }
+      #sideBySideOne {
+        left: 30%;
+      }
+      #sideBySideTwo {
+        left: 70%;
+      }
+    </style>
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.2/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+
+    <div class="container">
+      <div class="row">
+        <div class="col-md-3 topRowLeft">
+
+        </div>
+        <div class="col-md-6">
+
+        </div>
+        <div class="col-md-1 topRowRight">
+
+        </div>
+        <div class="col-md-1 topRowRight">
+
+        </div>
+        <div class="col-md-1 topRowRight">
+
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-12 topTextRow">
+          <h2>
+            Lorem ipsum dolor sit amet, te ius esse meliore.
+          </h2>
+        </div>
+      </div>
+        <div class="row">
+          <div class="col-md-12 bottomTextRow">
+            <img src="images/turtle.png" alt="turtle">
+          </div>
+        </div>
+      <div class="row">
+        <div class="col-md-4 gallery">
+          <img src="images/turtle2.png" alt="another turtle" id="pic1">
+        </div>
+        <div class="col-md-4 gallery">
+          <img src="images/turtle3.jpg" alt="yet another turtle" id="pic2">
+          <img src="images/turtle4.jpg" alt="more turtle" id="pic3">
+        </div>
+        <div class="col-md-4 gallery galleryOneRight">
+          <img src="images/turtle5.jpg" alt="last turtle, promise" id="pic4">
+          <p>Donatello deserved an Oscar.</p>
+          <p>Russell Crowe deserves nothing.</p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-4 gallery relativeParent">
+          <img src="images/turtle6.gif" alt="just kidding, more turtles" id="pic5">
+        </div>
+        <div class="col-md-4 gallery relativeParentTwo">
+          <img src="images/turtle7.jpg" alt="TURTLE" id="sideBySideOne">
+          <img src="images/turtle8.jpg" alt="TURTLE" id="sideBySideTwo">
+        </div>
+        <div class="col-md-4 gallery">
+
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-4 gallery">
+
+        </div>
+        <div class="col-md-4 gallery">
+
+        </div>
+        <div class="col-md-4 gallery">
+
+        </div>
+      </div>
+    </div>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+  </body>
+</html>
