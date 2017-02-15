@@ -32,6 +32,10 @@
         margin: 0;
         padding: 0;
       }
+      .headerCar, .headerTitle {
+        background-color: black;
+        color: white;
+      }
       .navBar {
         height: 50px;
         min-height: 50px;
@@ -39,20 +43,30 @@
         text-align: center;
         line-height: 50px;
         font-weight: 700;
+        background-color: black;
+        border: 2px solid white;
+        color: white;
       }
       .subTitle {
         height: 75px;
         min-height: 75px;
         max-height: 75px;
+        border-bottom: 5px solid black;
+      }
+      h2 {
+        text-align: center;
       }
       .carStyle {
         height: 250px;
         min-height: 250px;
         max-height: 250px;
         text-align: center;
+        pointer-events: stroke;
       }
       .carStyle img {
-        width: 95%;
+        height: 200px;
+        min-height: 200px;
+        max-height: 200px;
         display: block;
         margin: 0 auto;
         padding-top: 15%;
@@ -64,7 +78,8 @@
         text-align: center;
       }
       .priceChoice img {
-        width: 95%;
+        height: 200px;
+        min-height: 200px;
         max-height: 200px;
         display: block;
         margin: 0 auto;
@@ -75,6 +90,16 @@
         min-height: 50px;
         max-height: 50px;
         text-align: center;
+        background-color: darkgrey;
+        border-radius: 5px;
+        box-shadow: 3px 3px 3px black;
+      }
+      .findYourCarButton a {
+        line-height: 25px;
+        text-align: center;
+        color: red;
+        font-size: 18px;
+        font-weight: 700;
       }
       .map {
         height: 200px;
@@ -89,6 +114,10 @@
         height: 150px;
         min-height: 150px;
         max-height: 150px;
+        background-color: black;
+        color: white;
+        text-align: center;
+        line-height: 150px;
       }
     </style>
 
@@ -141,19 +170,19 @@
       <div class="row">
         <div class="col-md-3 randomColor carStyle">
           <img src="images/van.jpg" alt="van">
-          Van
+          <input type="radio" name="carstyle" value="van">Van
         </div>
         <div class="col-md-3 randomColor carStyle">
           <img src="images/sportscar.jpg" alt="sportscar">
-          Sport
+          <input type="radio" name="carstyle" value="sport">Sport
         </div>
         <div class="col-md-3 randomColor carStyle">
           <img src="images/sedan.jpg" alt="sedan">
-          Sedan
+          <input type="radio" name="carstyle" value="sedan">Sedan
         </div>
         <div class="col-md-3 randomColor carStyle">
           <img src="images/suv.jpg" alt="suv">
-          SUV
+          <input type="radio" name="carstyle" value="suv">SUV
         </div>
       </div>
       <div class="row">
@@ -164,19 +193,19 @@
       <div class="row">
         <div class="col-md-3 randomColor priceChoice">
           <img src="images/priceLevel1.jpg" alt="empty pocket">
-          Rust Bucket
+          <input type="radio" name="pricerange" value="rustBucket">Rust Bucket
         </div>
         <div class="col-md-3 randomColor priceChoice">
           <img src="images/priceLevel2.jpg" alt="small cash">
-          Alright
+          <input type="radio" name="pricerange" value="alright">Alright
         </div>
         <div class="col-md-3 randomColor priceChoice">
           <img src="images/priceLevel3.jpg" alt="middle class">
-          Swanky
+          <input type="radio" name="pricerange" value="swanky">Swanky
         </div>
         <div class="col-md-3 randomColor priceChoice">
           <img src="images/priceLevel4.jpg" alt="Walter White">
-          Hella Cash
+          <input type="radio" name="pricerange" value="hellaCash">Hella Cash
         </div>
       </div>
       <div class="row">
@@ -221,25 +250,5 @@
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
 
-    <script>
-        function getRandomNumber(min, max) {
-            return Math.floor(Math.random() * max + min);
-        }
-
-        $(document).ready(function() {
-
-            var bodyColumns = $(".randomColor");
-
-            bodyColumns.each(function() {
-
-                $(this).css("background-color", "rgb(" + getRandomNumber(0, 255) + "," + getRandomNumber(0, 255) + "," + getRandomNumber(0, 255) + ")");
-
-            })
-
-            $("body").css("background-color", "rgb(" + getRandomNumber(0, 255) + "," + getRandomNumber(0, 255) + "," + getRandomNumber(0, 255) + ")");
-
-
-        })
-    </script>
   </body>
 </html>
