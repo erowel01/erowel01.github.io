@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Class Week 7</title>
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.2/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+    Hello World!
+
+    <div id="myDiv">
+        Look some text!
+    </div>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+
+    <script type="text/javascript">
+        // () means execute a function
+
+        // alert("Follow me on Twitter");
+        console.log("Please follow me on Twitter");
+
+        var myVar;
+        var myAnotherVar = "Here is my another var";
+
+        //alert(myAnotherVar);
+        console.log(myAnotherVar);
+
+        var myFirstName = "Papa";
+        var myLastName = "Midnite";
+        //alert("My first name is " + myFirstName + " and my last name is " + myLastName);
+
+        // {} means code block - everything in code block will be executed
+        function sayMyName() {
+            console.log("Your name is " + myFirstName + " " + myLastName);
+        }
+
+        //calling the function
+        sayMyName();
+
+        function sayMyName2(name) {
+            console.log("My name is " + name);
+        }
+        sayMyName2("Peter");
+        sayMyName2("Paul");
+        sayMyName2("Mary");
+
+        // $ means jQuery must perform a function
+        /*When the document is ready, jQuery gets the element with id "myDiv"
+        and calls the html function, which will replace the html within the
+        element*/
+        $(document).ready(function(){
+          //alert("this document is ready to rumble");
+
+          //replace html
+          $("#myDiv").html("Everything is different now");
+          //append html
+          $("#myDiv").append("<br>and everything is grand!");
+        });
+    </script>
+
+
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+</body>
+
+</html>
