@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Class Part 2 - Week 8</title>
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.2/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <style media="screen">
+      .topRow, .bottomRow {
+        height: 50px;
+        min-height: 50px;
+        max-height: 50px;
+        border: 1px solid black;
+      }
+      .middleRow {
+        height: 600px;
+        min-height: 600px;
+        max-height: 600px;
+        border: 1px solid black;
+      }
+      .middleRowNested {
+        height: 300px;
+        min-height: 300px;
+        max-height: 300px;
+        border: 1px solid black;
+        position: relative;
+      }
+      .middleRowNested img {
+        max-height: 100%;
+        max-width: 100%;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50% , -50%);
+      }
+    </style>
+
+  </head>
+  <body>
+
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12 hidden-xs topRow">
+
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-12 middleRow">
+          <div class="row">
+            <div class="col-md-2 hidden-xs">
+
+            </div>
+            <div class="col-md-4 middleRowNested">
+              <img src="images/dogs1.png" alt="">
+            </div>
+            <div class="col-md-4 middleRowNested">
+              <img src="images/dogs2.png" alt="">
+            </div>
+            <div class="col-md-2 hidden-xs">
+
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-2 hidden-xs">
+
+            </div>
+            <div class="col-md-4 middleRowNested">
+              <img src="images/dogs3.png" alt="">
+            </div>
+            <div class="col-md-4 middleRowNested">
+              <img src="images/dogs4.png" alt="">
+            </div>
+            <div class="col-md-2 hidden-xs">
+
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-12 hidden-xs bottomRow">
+
+        </div>
+      </div>
+    </div>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+  </body>
+</html>

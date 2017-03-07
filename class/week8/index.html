@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Class - Week 8</title>
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <style media="screen">
+        .centerDiv {
+            text-align: center;
+        }
+
+        img {
+            height: 400px;
+        }
+    </style>
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.2/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="row">
+            <div id="carDiv" class="col-md-12">
+
+            </div>
+        </div>
+        <div class="row">
+            <div id="timDiv" class="col-md-12">
+
+            </div>
+        </div>
+        <div class="row">
+            <div id="kittyDiv" class="col-md-12">
+
+            </div>
+        </div>
+    </div>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+        // our program
+        var myString = "a string";
+        var myNumber = 2;
+        // myVar is treated as a string because it is in quotation marks, even though it is a number
+        var myVar = "2";
+        var myBoolean = false;
+        // myVar2 is treated as a string because it is in quotation marks, even though it is a boolean keyword
+        var myVar2 = "true";
+
+        // array; declare with square brackets
+        //declaring an empty array
+        var myArray = [];
+
+        var myFullArray = ["Calen", "Nicole", "Evan"];
+
+        console.log(myFullArray[0]);
+        console.log("myFullArray 2nd value = " + myFullArray[1]);
+
+        var myMixArray = [3, "David", false];
+        myMixArray.push("another value");
+        console.log("myMixArray values:" + myMixArray);
+
+        // type, price, mileage, colour, fuelType, src
+
+        var car = {
+            type: "SUV",
+            price: 45000,
+            mileage: 24,
+            color: "magenta",
+            fuelType: "electric",
+            src: "images/car1.jpg",
+            message: function() {
+                console.log("A car is useful!");
+            }
+        };
+
+        var timothy = {
+          name: "Timothy Smimothy",
+          age: 44,
+          occupation: "used car salesman",
+          currentLocation: "unknown",
+          src: "images/timothy.jpg"
+        };
+
+        var kitty = {
+          name: "Scratchy",
+          age: 3,
+          occupation: "getting in the way",
+          currentLocation: "sitting on the keyboard",
+          src: "images/cat1.jpg"
+        };
+
+        //object name.property
+        console.log(car.type);
+        console.log(car.price);
+        console.log(car.message());
+
+        $(document).ready(function() {
+            /*
+            $("#carDiv").html("<div id='centerDiv'>");
+            $("#carDiv").append("<div>"+car.type+"</div>");
+            $("#carDiv").append("<img src='"+car.src+"' />");
+            $("#carDiv").append("<div>"+car.price+"</div>");
+            $("#carDiv").append("</div>");
+            */
+
+            var myHtml = "<div class='centerDiv'>" +
+                "<div>" + car.type + "</div>" +
+                "<img src='" + car.src + "' />" +
+                "<div>" + car.price + "</div>" +
+                "</div>"
+            $("#carDiv").html(myHtml);
+
+            var myHtml2 = "<div class='centerDiv'>" +
+                "<div>" + timothy.name + ", " + timothy.age + "</div>" +
+                "<img src='" + timothy.src + "' />" +
+                "<div>" + timothy.occupation + "</div>" +
+                "</div>"
+            $("#timDiv").html(myHtml2);
+
+            var myHtml3 = "<div class='centerDiv'>" +
+                "<div>" + kitty.name + ", " + kitty.age + "</div>" +
+                "<img src='" + kitty.src + "' />" +
+                "<div>" + kitty.currentLocation + "</div>" +
+                "</div>"
+            $("#kittyDiv").html(myHtml3);
+
+        });
+
+    </script>
+</body>
+
+</html>
