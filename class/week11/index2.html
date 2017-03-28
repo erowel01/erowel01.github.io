@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Week 11 Part 2</title>
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Permanent+Marker" rel="stylesheet">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.2/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <style media="screen">
+      #myContainer {
+        width: 100%;
+        height: 100%;
+      }
+
+      #background {
+        width: 100%;
+        height: 100%;
+        position: fixed;
+        top: 0px;
+        left: 0px;
+        z-index: -1;
+      }
+
+      #background img {
+        width: 100%;
+        height: 100%;
+        position: relative;
+      }
+
+      h1 {
+        text-align: center;
+        padding: 0;
+        padding-bottom: 20px;
+        margin: 0;
+        font-family: "Permanent Marker";
+        text-decoration: underline;
+        color: blue;
+        font-size: 50px;
+
+      }
+
+      .gifContainer {
+        display: block;
+        text-align: center;
+      }
+
+      .gifContainer iframe {
+        padding-left: 50px;
+        padding-right: 50px;
+        background-color: rgba(255, 0, 0, 0.5);
+        border: 5px solid blue;
+        border-top-right-radius: 100px;
+        border-bottom-left-radius: 100px;
+        margin-bottom: 20px;
+      }
+
+      .myInline {
+          display: inline-block;
+          margin-left: 125px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="myContainer">
+      <img src="vaporwave.jpg" id="background" alt="">
+
+      <h1>Official Michelle Tanner Fan Club</h1>
+
+    </div>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+      var gifsURL = "https://api.giphy.com/v1/gifs/search?q=full+house+michelle&api_key=dc6zaTOxFJmzC"
+      $.get(gifsURL)
+      .done(function(data){
+        console.log("success!");
+        console.dir(data);
+
+        var myHTML = "";
+        for(var i = 0 ; i < 10 ; i++){
+          myHTML += '<div class="gifContainer myInline">'
+          myHTML += '<iframe  src="' + data.data[i].embed_url + '" width="480" height="457" frameborder="0" class="giphy-embed" allowfullscreen></iframe>'
+          myHTML += '</div>'
+        }
+
+        $("#myContainer").append(myHTML);
+      })
+      .fail(function(data){
+        console.log("fail!");
+        console.dir(data);
+      });
+    </script>
+  </body>
+</html>
