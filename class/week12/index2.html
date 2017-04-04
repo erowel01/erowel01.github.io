@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Week 12</title>
+    <title>Week 12.2</title>
 
     <!-- Bootstrap -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
@@ -25,13 +25,27 @@
         }
 
         .content {
-            min-height: 500px;
+            min-height: 100px;
         }
 
         .footer {
             height: 75px;
             min-height: 75px;
             max-height: 75px;
+        }
+
+        #playerInfo img {
+          width: 200px;
+          float: left;
+        }
+
+        #playerInfo div {
+          padding-top: 100px;
+          padding-left: 300px;
+        }
+        h2 {
+          padding: 0;
+          margin: 0;
         }
     </style>
 </head>
@@ -45,7 +59,24 @@
 
         </div>
         <div class="col-md-8 content randomColor">
-
+          <div id="playerInfo">
+            <img src="https://upload.wikimedia.org/wikipedia/en/thumb/e/e4/NHL_Logo_former.svg/996px-NHL_Logo_former.svg.png" alt="">
+            <div>
+              <h2>NHL Rookie Scoring Leaders</h2>
+            </div>
+          </div>
+          <table id="rookieTable" class="table table-hover">
+            <tr>
+              <th>Rank</th>
+              <th>Player</th>
+              <th>Team</th>
+              <th>Pos</th>
+              <th>GP</th>
+              <th>G</th>
+              <th>A</th>
+              <th>P</th>
+            </tr>
+          </table>
         </div>
         <div class="col-md-2">
 
@@ -90,16 +121,36 @@
                 console.dir(data);
 
                 var myHTML = "";
+
                 for(var i = 0 ; i < 12 ; i++){
-                  myHTML += '<div class="rookieContainer">'
-                  myHTML += '<div class="rookieName">' + data[i].name + "</div>"
-                  myHTML += '<div class="rookieStats"> Goals: ' + data[i].goals + ' Assists: ' + data[i].assists + ' Points: ' + data[i].points + '</div>'
-                  myHTML += '<div class="rookieImage"><img src="' + data[i].image + '" /></div>'
-                  myHTML += '</div>'
+                  myHTML += '<tr data-index="' + i + '">'
+                  myHTML += '<td>' + (i + 1) + '</td>'
+                  myHTML += '<td>' + data[i].name + '</td>'
+                  myHTML += '<td>' + data[i].team + '</td>'
+                  myHTML += '<td>' + data[i].position + '</td>'
+                  myHTML += '<td>' + data[i].gamesPlayed + '</td>'
+                  myHTML += '<td>' + data[i].goals + '</td>'
+                  myHTML += '<td>' + data[i].assists + '</td>'
+                  myHTML += '<td>' + data[i].points + '</td>'
+                  myHTML += '</tr>'
                 }
 
-                $(".content").append(myHTML);
+                $(document).ready(function(){
+                  $("#rookieTable").append(myHTML)
+
+                  //for all td in statsTable turn on a click, then execute the function
+                  $("#rookieTable").find("td").on("click", function(){
+                    //get the cloesest row of this td and get the data-index attribute
+                    var index = $(this).closest("tr").attr("data-index");
+                    console.log("index: " + index);
+                    //change the src attr to the correct image
+                    $("#playerInfo").find("img").attr("src", data[index].image);
+                    //replace the html in the playerinfo div with the player details
+                    $("#playerInfo").find("div").html(data[index].details);
+                  })
+                })
             })
+
             .fail(function(data) {
                 console.log("fail!");
                 console.dir(data);

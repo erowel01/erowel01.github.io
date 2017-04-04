@@ -1,0 +1,91 @@
+[{
+        "name": "Pixel",
+        "brand": "Google",
+        "storageSize": "32GB",
+        "price": "$899.00",
+        "seller": "Google",
+        "color": "Very Silver",
+        "description": "Meet Pixel, a phone by Google. It’s the first phone with the Google Assistant built in. Ask it questions. Tell it to do things. It’s your own personal Google Assistant, always ready to help. The 12.3MP rear camera and 8MP front camera take stunning photos in low light, bright light, or any light. And with unlimited storage for your photos and videos, you’ll never have to delete an old memory to make room for a new one. Additional features for Pixel include a 5.0” AMOLED display, cinematic widescreen 16:9 aspect ratio, Corning Gorilla Glass for durability, and more"
+    },
+  {
+      "name": "Vertu Signature",
+      "brand": "Vertu",
+      "storageSize": "4GB",
+      "price": "$3,520.00",
+      "seller": "Selfridges CA",
+      "color": "Red Gold & Stainless Steel",
+      "description": "Meticulously handcrafted from the finest rare materials to the label's uncompromising standards, Signature is the outstanding, elementary expression of Vertu’s vision."
+  },
+  {
+      "name": "Studio Selfie 2",
+      "brand": "Blue Studio",
+      "storageSize": "N/A",
+      "price": "$110.00",
+      "seller": "eBay",
+      "color": "Gold",
+      "description": "Meet the Studio Selfie 2, the new and improved Selfie smartphone with vast improvements in design, build quality, and battery life. Your movies and pictures will look amazing on the fully laminated 5inch display with BLU Infinite View (IPS) and BLU Next Lens Technologies (OGS). Take the best pictures ever with your 5 Megapixel Main Camera with Auto-focus or get your Selfie on with the 5 Megapixel Front Camera."
+  },
+  {
+      "name": "PRIV",
+      "brand": "Blackberry",
+      "storageSize": "N/A",
+      "price": "$489.99",
+      "seller": "CrackBerry Canada",
+      "color": "Black",
+      "description": "PRIV combines everything you expect from BlackBerry plus the full eco-system of Android and its apps. PRIV comes with added security to let you know when your data could be at risk, so you can take action to improve it."
+  },
+  {
+      "name": "Liquid",
+      "brand": "Acer",
+      "storageSize": "8BG",
+      "price": "$69.98",
+      "seller": "FactoryDirect",
+      "color": "Black",
+      "description": "The Z220 features a design that is as functional as it is beautiful. The fabric-inspired motif on the rear cover creates a look of sophistication and adds surface texture. The silver middle frame features a unique square pyramid design. Besides being great to look at, this styling also makes the device easier to grip and use with one hand."
+  },
+  {
+      "name": "Octa Black tlizard skin ouch phone",
+      "brand": "Vertu",
+      "storageSize": "64GB",
+      "price": "1006.46",
+      "seller": "DH Gate",
+      "color": "Black tlizard skin",
+      "description": "2016 luxury phone 4G LTE Octa Black tlizard skin ouch phone"
+  },
+  {
+      "name": "Crown",
+      "brand": "VKWorld",
+      "storageSize": "N/A",
+      "price": "$59.28",
+      "seller": "GearBest",
+      "color": "Black",
+      "description": "1.63 inch Corning Gorilla Glass Screen Guard Lock Pedometer Remote Control Bluetooth 0.49 cm Ultra Thin Bluetooth 3.0"
+  },
+  {
+      "name": "F1 Mini",
+      "brand": "NEWMIND",
+      "storageSize": "128Mb",
+      "price": "$457.92",
+      "seller": "DH Gate",
+      "color": "Red",
+      "description": "The smallest phone of 2016"
+  },
+  {
+      "name": "CS60subusaun",
+      "brand": "Caterpillar",
+      "storageSize": "N/A",
+      "price": "$739.99",
+      "seller": "eBay",
+      "color": "Black",
+      "description": "The CAT S60 smartphone revolutionizes the way you use your smartphone thanks to thermal imaging. Spot objects in the dark, identify maintenance issues in the home or workplace, and so much more. The S60's tough construction is drop-proof and waterproof, making it ideal for adrenaline junkies, working professionals, and more."
+  },
+  {
+      "name": "iPhone 7 Plus",
+      "brand": "Apple",
+      "storageSize": "128 GB",
+      "price": "$1179.00",
+      "seller": "Apple",
+      "color": "Black",
+      "description": "Available in jet black,1 black - silver - gold - rose gold and (PRODUCT)RED‎ - iPhone 7 features an all-new 12MP camera; splash - water and dust resistance; an A10 Fusion chip; a new Retina HD display with wide colour; stereo speakers; and iOS 10."
+  }
+]
