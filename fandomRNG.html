@@ -1,175 +1,192 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Crossover Generator | The Unstable Universes Podcast</title>
 
-    <!-- Bootstrap -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Crossover Generator | The Unstable Universes Podcast</title>
 
-    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+
+  <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+  <!--[if lt IE 9]>
       <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.2/html5shiv.js"></script>
       <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
-  </head>
+</head>
 
-  <style media="screen">
-    body {
-      text-align: center;
-      position: relative;
-      background-image: url(typewriter.jpg);
-      background-size: cover;
-    }
+<style media="screen">
+  body {
+    text-align: center;
+    position: relative;
+    background-image: url(typewriter.jpg);
+    background-size: cover;
+  }
 
-    h1 {
-      padding: 0;
-      margin: 0;
-      font-size: 36px;
-    }
+  h1 {
+    padding: 0;
+    margin: 0;
+    font-size: 36px;
+  }
 
-    h2 {
-      padding: 0;
-      margin: 0;
-      font-size: 24px;
-    }
+  h2 {
+    padding: 0;
+    margin: 0;
+    font-size: 24px;
+  }
 
-    .title{
-      margin-top: 100px;
-      padding: 25px;
-      color: #fff;
-      text-shadow: 1px 1px 1px #000;
-    }
+  .title {
+    margin-top: 100px;
+    padding: 25px;
+    color: #fff;
+    text-shadow: 1px 1px 1px #000;
+  }
 
-    .mainFandom, .supportFandom, .genre {
-      border: 3px solid #000;
-      padding: 0;
-      width: 30%;
-      height: 150px;
-      line-height: 150px;
-      font-size: 18px;
-      background-color: rgba(255,255,255,0.75);
-      border-bottom-right-radius: 30px;
-      border-bottom-left-radius: 30px;
-    }
+  .mainFandom,
+  .supportFandom,
+  .genre {
+    border: 3px solid #000;
+    padding: 0;
+    width: 30%;
+    height: 150px;
+    line-height: 150px;
+    font-size: 18px;
+    background-color: rgba(255, 255, 255, 0.75);
+    border-bottom-right-radius: 30px;
+    border-bottom-left-radius: 30px;
+  }
 
-    .mainFandom, .title1 {
-      box-shadow: -4px 4px 4px #191919;
-    }
+  .mainFandom,
+  .title1 {
+    box-shadow: -4px 4px 4px #191919;
+  }
 
-    .supportFandom, .title2 {
-      box-shadow: 0px 4px 4px #191919;
-    }
+  .supportFandom,
+  .title2 {
+    box-shadow: 0px 4px 4px #191919;
+  }
 
-    .genre, .title3 {
-      box-shadow: 4px 4px 4px #191919;
-    }
+  .genre,
+  .title3 {
+    box-shadow: 4px 4px 4px #191919;
+  }
 
-    .title1, .title2, .title3 {
-      padding: 0;
-      width: 30%;
-      padding: 10px;
-      margin: 0;
-      background-color: black;
-      color: white;
-      border-top-right-radius: 30px;
-      border-top-left-radius: 30px;
-    }
+  .title1,
+  .title2,
+  .title3 {
+    padding: 0;
+    width: 30%;
+    padding: 10px;
+    margin: 0;
+    background-color: black;
+    color: white;
+    border-top-right-radius: 30px;
+    border-top-left-radius: 30px;
+  }
 
-    .mainFandom, .supportFandom, .title1, .title2 {
-      margin-right: 5%;
-    }
+  .mainFandom,
+  .supportFandom,
+  .title1,
+  .title2 {
+    margin-right: 5%;
+  }
 
-    .crossoverButton {
-      display: block;
-      margin: 0 auto;
-      margin-top: 50px;
-      background-color: black;
-      border: 1px solid black;
-      color: white;
-      width: 97%;
-      height: 50px;
-      font-size: 18px;
-      line-height: 50px;
-      border-radius: 10px;
-    }
+  .crossoverButton {
+    display: block;
+    margin: 0 auto;
+    margin-top: 50px;
+    background-color: black;
+    border: 1px solid black;
+    color: white;
+    width: 97%;
+    height: 50px;
+    font-size: 18px;
+    line-height: 50px;
+    border-radius: 10px;
+  }
 
-    .crossoverButton:hover {
-      background-color: #C0C0C0;
-      color: #000;
-      box-shadow: 0px 4px 4px #000;
-    }
-  </style>
-  <body>
+  .crossoverButton:hover {
+    background-color: #C0C0C0;
+    color: #000;
+    box-shadow: 0px 4px 4px #000;
+  }
+</style>
 
-    <div class="container">
-      <div class="row">
-        <div class="col-md-12 title">
-          <h1>Crossover Generator</h1>
-          <h2>The Unstable Universes Podcast</h2>
-        </div>
-      </div>
-      <div class="row subheads">
-          <div class="col-md-4 title1">
-            <h3>Main Fandom</h3>
-          </div>
-          <div class="col-md-4 title2">
-            <h3>Support Fandom</h3>
-          </div>
-          <div class="col-md-4 title3">
-            <h3>Tag</h3>
-          </div>
-      </div>
-      <div class="row content">
-          <div class="col-md-4 mainFandom">
+<body>
 
-          </div>
-          <div class="col-md-4 supportFandom">
-
-          </div>
-          <div class="col-md-4 genre">
-
-          </div>
-      </div>
-      <div class="row">
-        <div class="col-md-4">
-
-        </div>
-        <div class="col-md-4">
-          <div class="crossoverButton">Make Your Crossover</div>
-        </div>
-        <div class="col-md-4">
-
-        </div>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12 title">
+        <h1>Crossover Generator</h1>
+        <h2>The Unstable Universes Podcast</h2>
       </div>
     </div>
+    <div class="row subheads">
+      <div class="col-md-4 title1">
+        <h3>Main Fandom</h3>
+      </div>
+      <div class="col-md-4 title2">
+        <h3>Support Fandom</h3>
+      </div>
+      <div class="col-md-4 title3">
+        <h3>Tag</h3>
+      </div>
+    </div>
+    <div class="row content">
+      <div class="col-md-4 mainFandom">
 
-    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-    <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+      </div>
+      <div class="col-md-4 supportFandom">
 
-    <script type="text/javascript">
-      var fandomList = ["Supernatural" , "Harry Potter" , "Sherlock" , "Teen Wolf" , "The Avengers" , "One Direction" , "Captain America" , "Doctor Who" , "Star Wars" , "Attack on Titan" , "Once Upon a Time" , "Glee" , "Merlin" , "Buffy the Vampire Slayer" , "The Hobbit" , "Thor" , "Game of Thrones" , "Star Trek" , "Justice League" , "Naruto" , "The 100" , "Agents of S.H.I.E.L.D." , "Les Miserables" , "Hannibal Lecter" , "X-Men" , "Iron Man" , "Arrow" , "My Chemical Romance" , "The Flash" , "The Lord of the Rings" , "Rooster Teeth" , "Transformers" , "Batman" , "Percy Jackson" , "The Walking Dead" , "5 Seconds of Summer" , "Kingsman: The Secret Service" , "Daredevil" , "Avatar: The Last Airbender/The Legend of Korra" , "Steven Universe" , "Fall Out Boy" , "Criminal Minds" , "Vampire Diaries" , "Mad Max" , "James Bond" , "Frozen" , "Pacific Rim" , "Pokemon" , "Panic! at the Disco" , "Hunger Games" , "The Maze Runner" , "Death Note", "Super Mario Bros." , "Sonic the Hedgehog" , "Teensage Mutant Ninja Turtles" , "Friday the 13th" , "Nightmare on Elm Street" , "Rugrats" , "iCarly" , "Pirates of the Caribbean" , "Lilo and Stitch" , "Paw Patrol" , "Bob the Builder" , "Catdog" , "Breaking Bad" , "Firefly" , "Full Metal Alchemist" , "Stranger Things" , "Arrested Development" , "The Office" , "Dexter" , "Dragon Ball Z" , "Parks and Recreation" , "Masterchef" , "Saw" , "Spirited Away" , "Princess Mononoke" , "V for Vendetta" , "Pulp Fiction" , "Fight Club" , "Inception" , "The Lion King" , "Alien" , "Jurassic Park" , "Avatar", "Ghostbusters" , "My Hero Academia" , ""];
+      </div>
+      <div class="col-md-4 genre">
 
-      var tagList = ["High School AU" , "Hurt/Comfort" , "Self-Insert" , "Songfic" , "Abduction" , "Action/Adventure" , "Angst" , "Bathing/Washing" , "BDSM" , "Birthday" , "Break Up" , "Chatting and Messaging" , "Crimes and Criminals" , "Amnesia" , "Anthropomorphic" , "Bonding" , "Corporal Punishment" , "Crackfic" , "Curtainfic" , "Character Death" , "Dark" , "Fluff" , "Fuck or Die" , "Fusion" , "Genderswap" , "Heat Cycle" , "Kidfic" , "M-Preg" , "Future-Fic" , "Pre-Series" , "Plot? What Plot?" , "Steampunk" , "Time Travel" , "Wingfic" , "All Human" , "Bandfic"];
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-4">
 
-      $(".crossoverButton").click(function() {
+      </div>
+      <div class="col-md-4">
+        <div class="crossoverButton">Make Your Crossover</div>
+      </div>
+      <div class="col-md-4">
 
-        var mainFandom = fandomList[Math.floor(Math.random()*fandomList.length)];
-        $(".mainFandom").html(mainFandom)
+      </div>
+    </div>
+  </div>
 
-        var supportFandom = fandomList[Math.floor(Math.random()*fandomList.length)];
-        $(".supportFandom").html(supportFandom)
+  <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <!-- Include all compiled plugins (below), or include individual files as needed -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
 
-        var tag = tagList[Math.floor(Math.random()*tagList.length)];
-        $(".genre").html(tag)
+  <script type="text/javascript">
+    var fandomList = ["Supernatural", "Harry Potter", "Sherlock", "Teen Wolf", "The Avengers", "One Direction", "Captain America", "Doctor Who", "Star Wars", "Attack on Titan", "Once Upon a Time", "Glee", "Merlin", "Buffy the Vampire Slayer",
+      "The Hobbit", "Thor", "Game of Thrones", "Star Trek", "Justice League", "Naruto", "The 100", "Agents of S.H.I.E.L.D.", "Les Miserables", "Hannibal Lecter", "X-Men", "Iron Man", "Arrow", "My Chemical Romance", "The Flash",
+      "The Lord of the Rings", "Rooster Teeth", "Transformers", "Batman", "Percy Jackson", "The Walking Dead", "Kingsman: The Secret Service", "Daredevil", "Avatar: The Last Airbender/The Legend of Korra", "Steven Universe", "Fall Out Boy", "Criminal Minds", "Vampire Diaries", "Mad Max", "James Bond", "Frozen", "Pacific Rim", "Pokemon", "Panic! at the Disco", "Hunger Games", "The Maze Runner", "Death Note", "Super Mario Bros.", "Sonic the Hedgehog", "Teensage Mutant Ninja Turtles", "Friday the 13th", "Nightmare on Elm Street", "Rugrats", "iCarly", "Pirates of the Caribbean", "Lilo and Stitch", "Paw Patrol", "Bob the Builder", "Catdog", "Breaking Bad", "Firefly", "Full Metal Alchemist", "Stranger Things", "Arrested Development", "The Office", "Dexter", "Dragon Ball Z", "Parks and Recreation", "Masterchef", "Saw", "Spirited Away", "Princess Mononoke", "V for Vendetta", "Pulp Fiction", "Fight Club", "Inception", "The Lion King", "Alien", "Jurassic Park", "Avatar", "Ghostbusters", "My Hero Academia", "Adam Sandler", "Nicolas Cage", "Danny Devito", "It's Always Sunny in Philadelphia", "Spongebob Squarepants", "Friends", "Community", "Freaks and Geeks", "The X-Files", "Scooby Doo", "Futurama", "Bob Ross", "Degrassi", "Anthony Bourdain", "Sesame Street", "The Muppets", "Adventure Time", "Phineas and Ferb", "Teletubbies", "Hannah Montana", "Fairly Odd Parents", "Pingu", "Alvin and the Chipmunks", "Dr. Suess", "Godzilla", "King Kong"
+    ];
 
-      });
-    </script>
-  </body>
+    var tagList = ["High School AU", "Hurt/Comfort", "Self-Insert", "Songfic", "Abduction", "Action/Adventure", "Angst", "Bathing/Washing", "BDSM", "Birthday", "Break Up", "Crimes and Criminals", "Amnesia", "Anthropomorphic", "Bonding", "Corporal Punishment", "Crackfic", "Curtainfic", "Character Death", "Dark", "Fluff", "Fusion", "Genderswap", "Heat Cycle", "Kidfic", "M-Preg", "Future-Fic", "Steampunk", "Time Travel", "Wingfic", "Bandfic", "Horror", "Game Show", "Crime Drama", "Mystery", "Sci-Fi", "Western", "Film Noir", "Victorian Era", "Running for President", "Military", "Spy", "Superhero AU", "Rom Com", "Post-Apocalyptic", "Detective",  "Courtroom Drama", "Gangster AU", "Murder Mystery", "Utopia", "Prison AU", "Cafe AU", "Road Trip", "Amazing Race", "Medieval", "Battle Royale"
+    ];
+
+    $(".crossoverButton").click(function() {
+
+      var mainFandom = fandomList[Math.floor(Math.random() * fandomList.length)];
+      $(".mainFandom").html(mainFandom)
+
+      var supportFandom = fandomList[Math.floor(Math.random() * fandomList.length)];
+      $(".supportFandom").html(supportFandom)
+
+      var tag = tagList[Math.floor(Math.random() * tagList.length)];
+      $(".genre").html(tag)
+
+    });
+  </script>
+</body>
+
 </html>
